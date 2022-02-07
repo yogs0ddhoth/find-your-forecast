@@ -8,6 +8,7 @@ $('#search-form').on('click', 'button', function(){
 
 //* search function:
 function handleSubmit() {
+  console.log("testing");
   let baseURL = "https://api.openweathermap.org/data/2.5/weather";
   let q = $('#search-input').val();
   let fetchURL = baseURL + "?q=" + q + "&appid=3228e13e94bfcef1510a65e94daa8d11";
