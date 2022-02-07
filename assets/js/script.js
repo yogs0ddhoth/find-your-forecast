@@ -15,6 +15,7 @@ function handleSubmit() {
     url: fetchURL,
     method: 'GET',
   }).then(function (response) {
+    console.log("testing");
     let cityCoord = response.coord;
     console.log(cityCoord);
     let cityCoordString = JSON.stringify(cityCoord);
