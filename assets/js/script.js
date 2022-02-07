@@ -1,7 +1,7 @@
 //** application functionality:
 
 //* search bar event handler:
-$('form').on('click', 'button', function(event){
+$('#search-form').on('click', 'button', function(){
   handleSubmit();
   oneCall();
 })
@@ -10,16 +10,17 @@ $('form').on('click', 'button', function(event){
 function handleSubmit() {
   let baseURL = "https://api.openweathermap.org/data/2.5/weather";
   let q = $('#search-input').val();
-  let fetchURL = baseURL + "?q=" + q + "&units=imperial&appid=3228e13e94bfcef1510a65e94daa8d11";
+  let fetchURL = baseURL + "?q=" + q + "&appid=3228e13e94bfcef1510a65e94daa8d11";
   $.ajax({
     url: fetchURL,
     method: 'GET',
   }).then(function (response) {
     let cityCoord = response.coord;
+    console.log(cityCoord);
     let cityCoordString = JSON.stringify(cityCoord);
     localStorage.setItem(q, cityCoordString);
-  })
-    // render button with city name 
+    $('#search-form').after('<button type="button" id="' + q + '" class="btn btn-primary btn-lg btn-block">' + q + '</button>');
+  });
 }
 
 function oneCall() {
