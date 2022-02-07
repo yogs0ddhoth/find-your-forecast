@@ -23,6 +23,7 @@ function handleSubmit() {
   // }).then(function (response) {
   //   console.log("testing");
   //   let cityCoord = response.coord;
+  //   console.log(cityCoord);
   //   let cityCoordString = JSON.stringify(cityCoord);
   //   localStorage.setItem(q, cityCoordString);
   //   $('#search-form').after('<button type="button" id="' + q + '" class="btn btn-primary btn-lg btn-block">' + q + '</button>');
@@ -66,3 +67,7 @@ $('').on('click', 'button', function(event){
   // re-declare locally stored data as variables
   // call render function with declared variables
 })
+
+$("#search-form").submit(function(e) {
+  e.preventDefault();
+});
