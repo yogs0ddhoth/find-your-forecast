@@ -1,4 +1,5 @@
 # find-your-forecast
+https://yogs0ddhoth.github.io/find-your-forecast/
 
 ## Planned Updates: 
-* update api algorithm to include state id, country id, and zip code
+* full styling
