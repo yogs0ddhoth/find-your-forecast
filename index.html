@@ -12,23 +12,23 @@
 
 <body>
   <header>
-    <h1>Find Your Forecast</h1>
+    <h1 class="text-center bg-dark text-light">Find Your Forecast</h1>
   </header>
 
   <main class="container-fluid row">
-    <aside class="col-3">
+    <aside class="col col-lg-2">
       <form id="search-form">
         <div class="form-group">
-          <label for="search-input">Search for a City:</label>
+          <label for="search-input font-weight-bold">Search for a City:</label>
           <input type="text" id="search-input" class="form-control" placeholder="San Diego">
         </div>
-        <button class="btn btn-primary">Search</button>
+        <button class="btn btn-primary btn-block">Search</button>
       </form>
       <br />
       <div id="saved"></div>
     </aside>
-    <section id="forecast" class="col-9">
-      <div class="jumbotron jumbotron-fluid">
+    <section id="forecast" class="col-12 col-lg-10">
+      <div class="jumbotron jumbotron-fluid mx-auto">
         <div class="container">
           <h1><span id="hero-city"></span> <br /> <span id="hero-date"></span></h1>
           <p>Temp: <span id="hero-temp"></span></p>

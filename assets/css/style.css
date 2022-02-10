@@ -1,0 +1,21 @@
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-purple {
+  background-color: blueviolet;
+}
+
+.bg-dark-blue {
+  background-color: midnightblue;
+}
+
+h4 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1039px) {
+  h4 {
+    font-size: 20px;
+  }
+}
