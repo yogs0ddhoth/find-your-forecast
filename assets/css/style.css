@@ -1,3 +1,7 @@
+.jumbotron {
+  opacity: .75;
+}
+
 .bg-orange {
   background-color: orange;
 }

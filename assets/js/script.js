@@ -83,7 +83,7 @@ $('#search-form').on('click', 'button', function(event){
       for (i = 1; i <= 5; i++) {
         
         let $card = $('<div></div>', {
-          'class': 'card col bg-dark-blue text-light',
+          'class': 'card col bg-dark-blue text-light shadow',
         }).appendTo($('#5-day-forecast'));
         
         // extract date and render
@@ -194,7 +194,7 @@ $('#saved').on('click', 'button', function(event){
     for (i = 1; i <= 5; i++) {
 
       let $card = $('<div></div>', {
-        'class': 'card col bg-dark-blue text-light',
+        'class': 'card col bg-dark-blue text-light shadow',
       }).appendTo($('#5-day-forecast'));
       
       // extract date and render
